@@ -1,4 +1,4 @@
-# An All-Purpose Customer Service Dashboard
+# A simple & minimal ticketing system
 
 My brother and I run an small e-commerce startup where we sell audio-repair kits across different online marketplaces. We wanted something that could easily aggregate messages, offers, refund requests, etc. into a simple drag-and-drop ticketing interface. It was surprisingly hard to find an available tool online that wasn't either super expensive, or so bloated with additional features that it made it hard to use. So I built this!
 
