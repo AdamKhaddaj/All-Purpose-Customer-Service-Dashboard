@@ -1,0 +1,21 @@
+# Flask and extensions
+Flask==3.0.0
+flask-cors==4.0.0
+flask-sqlalchemy==3.1.1
+flask-migrate==4.0.5
+
+# Database
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.23
+
+# Background tasks
+APScheduler==3.10.4
+
+# Environment variables
+python-dotenv==1.0.0
+
+# HTTP requests (for marketplace API integrations)
+requests==2.31.0
+
+# Optional: for better logging
+python-json-logger==2.0.7
