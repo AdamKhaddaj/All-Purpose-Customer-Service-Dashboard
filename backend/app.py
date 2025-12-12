@@ -17,7 +17,6 @@ db = SQLAlchemy()
 migrate = Migrate()
 
 def create_app(config_class=Config):
-    """Application factory pattern"""
     app = Flask(__name__)
     app.config.from_object(config_class)
     

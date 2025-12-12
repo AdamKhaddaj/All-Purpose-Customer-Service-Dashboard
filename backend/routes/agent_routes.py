@@ -7,7 +7,6 @@ bp = Blueprint('agents', __name__)
 
 @bp.route('/agents', methods=['GET'])
 def get_all_agents():
-    """Get all agents"""
     try:
         agents = Agent.query.order_by(Agent.name).all()
         return jsonify([agent.to_dict() for agent in agents]), 200
@@ -17,10 +16,6 @@ def get_all_agents():
 
 @bp.route('/agents', methods=['POST'])
 def create_agent():
-    """
-    Create a new agent
-    Body: string containing the agent's name
-    """
     try:
         agent_name = request.get_json()
         
@@ -46,10 +41,6 @@ def create_agent():
 
 @bp.route('/agents/<agent_id>', methods=['PUT'])
 def update_agent(agent_id):
-    """
-    Update an agent
-    Body: partial agent object { name?: string }
-    """
     try:
         agent = Agent.query.get(agent_id)
         if not agent:
@@ -74,10 +65,6 @@ def update_agent(agent_id):
 
 @bp.route('/agents/<agent_id>', methods=['DELETE'])
 def delete_agent(agent_id):
-    """
-    Delete an agent
-    Note: This will unassign all tickets from this agent
-    """
     try:
         agent = Agent.query.get(agent_id)
         if not agent:

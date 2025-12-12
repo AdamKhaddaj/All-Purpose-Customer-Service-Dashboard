@@ -1,13 +1,3 @@
-"""
-Background service to fetch customer messages from external sources and create tickets.
-
-This is a PLACEHOLDER/EXAMPLE implementation. You need to customize this based on 
-your specific marketplace integrations (Reverb, eBay, Amazon, Etsy, etc.).
-
-The scheduler runs on a timer (configured in .env via TICKET_FETCH_INTERVAL) and
-calls the fetch_and_create_tickets function periodically.
-"""
-
 import logging
 from datetime import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
