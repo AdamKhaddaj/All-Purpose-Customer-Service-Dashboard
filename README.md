@@ -1,18 +1,16 @@
 # A simple & minimal ticketing system
 
-My brother and I run an small e-commerce startup where we sell audio-repair kits across different online marketplaces. We wanted something that could easily aggregate messages, offers, refund requests, etc. into a simple drag-and-drop ticketing interface. It was surprisingly hard to find an available tool online that wasn't either super expensive, or so bloated with additional features that it made it hard to use. So I built this!
+My brother and I run a small e-commerce startup where we sell audio-repair kits across different online marketplaces. We needed a webapp that could easily aggregate messages, offers, refund requests, etc. into a simple drag-and-drop ticketing interface, while also being able to integrate with other tools & APIs (shipping services, our other internal tools, etc.). It was surprisingly hard to find an available tool online that wasn't either super expensive, or so bloated with additional features that it made it hard to use. 
 
-The frontend is built with Typescript/React, backend built with Flask/SQLAlchemy, to be used in a PostgreSQL database.
-
-While it was primarily built with e-commerce in mind, the backend is set up such that you can easily integrate it with any external API (emails, for example) to fetch customer inquiries and turn them into tickets.
+So I built this! The frontend is built with Typescript/React, backend built with Flask/SQLAlchemy, to be used in a PostgreSQL database. It supports a bunch of the features you'd expect from a ticketing dashboard, with a modular & robust backend that's ready to integrate with any external API (emails, etc.) to fetch inquiries and turn them into tickets.
 
 ## Features
 
-- Clean display of customer information associated with each ticket
+- Clean display of customer information associated with each ticket in a drag-and-drop interface
+- Fetch & reply to tickets from external APIs easily via the architecture laid out in the backend
 - Advanced Filtering Options, creating and setting tags, agents, statuses, priorities, etc.
 - Background scheduler automates fetching customer messages periodically
 - Quality of life features: canned responses, auto-response config, etc.
-- Modular & robust backend that easily integrates with external APIs to fetch inquiries
 
 ## 🛠️ Tech Stack
 
