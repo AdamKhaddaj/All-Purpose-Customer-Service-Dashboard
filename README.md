@@ -12,7 +12,7 @@ So I built this! The frontend is built with Typescript/React, backend built with
 - Background scheduler automates fetching customer messages periodically
 - Quality of life features: canned responses, auto-response config, etc.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 19.2.0**
@@ -23,7 +23,7 @@ So I built this! The frontend is built with Typescript/React, backend built with
 - **SQLAlchemy 2.0**
 - **PostgreSQL 12+**
 
-## 📸 Screenshots
+## Screenshots
 
 ### Main Dashboard
 ![Main Dashboard](screenshots/MainPageImage.png)
