@@ -1,7 +1,7 @@
 import logging
 from datetime import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
-from app import db
+from extensions import db
 from models import Ticket, Message
 import requests
 

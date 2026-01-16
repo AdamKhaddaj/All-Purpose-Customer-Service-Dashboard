@@ -1,8 +1,7 @@
 from flask import Flask
 from flask_cors import CORS
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
 from config import Config
+from extensions import db, migrate
 from services.ticket_fetcher import start_scheduler
 
 # blueprints
@@ -11,10 +10,6 @@ from routes.tag_routes import bp as tags_bp
 from routes.agent_routes import bp as agents_bp
 from routes.faq_routes import bp as faq_bp
 from routes.canned_response_routes import bp as canned_bp
-
-# Initialize db
-db = SQLAlchemy()
-migrate = Migrate()
 
 def create_app(config_class=Config):
     app = Flask(__name__)

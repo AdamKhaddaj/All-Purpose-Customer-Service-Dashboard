@@ -2,13 +2,6 @@ import { useState } from 'react';
 import TicketColumn from './TicketColumn';
 import type { Ticket, TicketStatus } from '../../../frontend/src/types';
 
-/**
- * TICKET TABLE COMPONENT
- * 
- * Displays tickets in three columns (New, In Progress, Completed)
- * Supports drag and drop to change ticket status
- * Click tickets to open modal for editing
- */
 
 interface TicketTableProps {
     tickets: Ticket[];

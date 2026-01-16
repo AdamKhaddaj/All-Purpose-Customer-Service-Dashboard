@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from app import db
+from extensions import db
 from models import CannedResponse
 
 bp = Blueprint('canned_responses', __name__)
